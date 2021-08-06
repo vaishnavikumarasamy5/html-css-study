@@ -1,0 +1,32 @@
+h3 
+{
+ color:blue;
+ }
+ 
+.para 
+{ 
+  color:green;
+}
+
+#header
+{
+	background-color:blue;
+}
+ body
+ {
+	 background-image:url("../image/vaishu.jpg");
+	 background-attachment:fixed;
+ }
+
+.button
+{ 
+  background-color:white;
+  color:black;
+  padding:20px;
+}
+.button:hover
+{
+	background-color:black;
+	color:white;
+	
+}
