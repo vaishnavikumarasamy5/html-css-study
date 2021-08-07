@@ -1,0 +1,28 @@
+body
+{
+    background-image:url("../image/vaishu.jpg");
+    background-attachment: fixed;
+}
+
+  
+div
+{
+  
+ text-align: center;
+ margin:100px 500px;
+ background-color:white;
+ height: 400px;
+ width: 400px;
+ border-radius: 25px;
+ 
+  
+}
+button
+{
+
+    padding:10px 150px;
+    margin:200px 30px;
+    border-radius:25px;
+    border-color: blueviolet;
+    
+}
