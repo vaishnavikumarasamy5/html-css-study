@@ -1,19 +1,36 @@
-<!DOCTYPE html>
+<!DOCTYpE html>
 <html>
+
 <head>
     <title>login</title>
     <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="https://kit.fontawesome.com/d901b5b9ef.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
-        <h1>login</h1>
-        <lable>username</lable>
-        <input type="text" /><br>
-        <label>password</label>
-        <input type="password"><br>
+    <div class="loginbox">
+        <h1 style="text-align: center; padding:30px;font-family: Arial, Helvetica, sans-serif;font-weight: 900;">Login
+        </h1>
+        <div class="textbox">
+            <i class="fas fa-user"></i><label></label>Username</label>
+            <input type="text" placeholder="enter username">
+        </div><Br>
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <labe>Password</label>
+                <input type="password" placeholder="password"><br>
+        </div>
+        <div class="link">
+            <a href="#" style="text-decoration: none;color: gray;margin: 0px 50px;">forgot password?</a>
+        </div>
         <button>
             login
         </button>
+        <div class="signup"  style="text-align: center;">or sign with<br>
+           <a href="#"><i class="fab fa-facebook-f" style="background-color:darkblue;color: white;font-size:20px;border-radius:50%;padding:10px;"></i></a>
+           <a href="#"><i class="fab fa-google" style= "background-color:red;color: white; font-size:20px;border-radius:50%;padding:10px;"></i><a>
+           <a href="#"><i class="fab fa-twitter" style="background-color:blue;color:white;font-size:20px;border-radius:50%;padding:10px;"></i></a>
+        </div>
     </div>
 </body>
+
 </html>

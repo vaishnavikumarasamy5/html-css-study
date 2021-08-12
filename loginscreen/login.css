@@ -5,24 +5,45 @@ body
 }
 
   
-div
+.loginbox
 {
   
- text-align: center;
- margin:100px 500px;
  background-color:white;
- height: 400px;
+ height: 550px;
  width: 400px;
- border-radius: 25px;
- 
-  
+ border-radius: 25px;  
+ box-sizing: border-box;
+ margin: 300px 500px;
+ margin-bottom:200px;
 }
+
+
+
+
 button
 {
 
-    padding:10px 150px;
-    margin:200px 30px;
+    padding:10px 100px;
+    margin:50px 80px;
     border-radius:25px;
-    border-color: blueviolet;
-    
+    border-color: blueviolet;   
+} 
+
+button:hover
+{
+  color: darkgray;
+}
+
+
+
+.textbox input
+{
+  
+  outline: none;
+  border: none;
+  width: 300px;
+  border-bottom: 1px solid;
+  height:30px;
+  margin:10px 50px;
+  border-color: gray;
 }
