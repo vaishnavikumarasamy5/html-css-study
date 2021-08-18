@@ -23,8 +23,8 @@ body
 button
 {
 
-    padding:10px 100px;
-    margin:50px 80px;
+    padding:10px 140px;
+    margin:50px 50px;
     border-radius:25px;
     border-color:blue;  
 } 
@@ -45,5 +45,5 @@ button:hover
   border-bottom: 1px solid;
   height:30px;
   margin:10px 50px;
-  border-color: gray;
+  border-color: gray
 }
