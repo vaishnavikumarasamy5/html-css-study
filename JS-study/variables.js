@@ -98,7 +98,47 @@ if (year == 1947) {
 let year = (year == 1947) ? "That's correct! You are smart!" : "How can you be so wrong?";
 alert(year);
 
+//LOGICAL OPERATORS
+//there are four types of logical operators "&&"(and),"||"(or),"!"(not),"??"(nullish coalescing)
+//it can be applied in any typeof data not only in boolean
 
+//logical "or"
+//it returns true if any one of the operend is true
+//if the operand is not in boolean it convert it in bollean for evaluvation
+//"or" finds the first truthy value if the many "or" is used
+//most of the time "OR ||" used in "if" statement to test any one of the given statement is true
+
+alert(true || false);//output will be true
+
+let hour = 9;
+if (hour < 10 || hour > 18) {
+    alert(truthy);
+}
+
+//logical "and"
+//it returns true if the both operend is true
+//"and" finds first falsy value if the many "and" is used
+//when all the values are truthy and it will returned last value
+
+alert(2 && null && 6 && 9);//the output will null
+
+//logical "not"
+//it converts the value in boolean type
+//it returns the inverse value
+
+alert(!"vaishu")// the out put will be "false"
+
+//a doubles NOT!! is sometimes used for converting a value to boolean type
+alert(!!"vaishu")//the output will be "true"
+
+
+//nullish coalesing "??"
+//it is short way to choose the first defined value
+//in other words it returns the first value if it's not null/undefined
+
+let nickname=null;
+let username=0;
+alert(nickname ?? username);//output 0
 
 
 
