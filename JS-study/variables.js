@@ -199,9 +199,9 @@ for (let v = 0; i < 10; i++) {
 //the continue directive can be also used with a label.
 //it this case code exection jumps to the next interation of the labled loops
 
-outer: for (let v = 2; v < 5; v++) {
-    for (let g = 2; g < 5; g++) {
-        let input = prompt(`values,(${v},${g})`, " ");
+outer: for (let g = 2; g < 5; g++) {
+    for (let v = 2; v < 5; v++) {
+        let input = prompt(`values,(${g},${v})`, " ");
         if (!input) break outer;
     }
 } alert("done!");//if value not enter or cancel in the prompt it break and show the alert
