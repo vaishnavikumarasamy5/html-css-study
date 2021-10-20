@@ -97,7 +97,7 @@ if (year == 1947) {
 
 let year = (year == 1947) ? "That's correct! You are smart!" : "How can you be so wrong?";
 alert(year);
-
+//---------------------------------------------><-------------------------------------------------------------
 //LOGICAL OPERATORS
 //there are four types of logical operators "&&"(and),"||"(or),"!"(not),"??"(nullish coalescing)
 //it can be applied in any typeof data not only in boolean
@@ -136,10 +136,75 @@ alert(!!"vaishu")//the output will be "true"
 //it is short way to choose the first defined value
 //in other words it returns the first value if it's not null/undefined
 
-let nickname=null;
-let username=0;
+let nickname = null;
+let username = 0;
 alert(nickname ?? username);//output 0
 
+
+//LOOPS "while" and "for"
+//loops are way to repeat the same code in multiple time
+
+//"while" lopps
+//the condition is checked before the iteration
+let i = 0;
+while (i < 3) {
+    alert(i);
+    i++;
+}//output 0,1,2,3
+
+
+//"do-while" loops
+//the condition check after the interation
+let j = 5
+do {
+    alert(j);
+    j++;
+} while (j <= 7);//output 5,6,7
+
+
+//"for" loops
+//condition check before both interation
+for (let v = 0; v <= 5; v++) {
+    alert(V);
+}//output 0. to 5 shows
+//or in another way
+letv = 0;
+for (; v < 5;) {
+    alert(v++);
+}
+
+//breaking the loop
+//the loop exists when its condition becomes falsy
+let sum = 0;
+while (true) {
+    let value = prompt("enters a number", " ");
+    if (!value) break;
+    sum += value;
+} alert(sum);
+//output when we stop or cancel to enter number in prompt it will break and sum the numbers
+
+//"continue" to next interation
+//it doesn't stop the whole loops
+//instead it stops the current interation and force the loops to start a new one 
+
+for (let v = 0; i < 10; i++) {
+    if (v % 2 == 0) continue;
+    alert(v);
+}//output 0,3,5,7,9
+//if we remove continue it show an even number
+
+
+//lables for break/continue
+//lables used to break out the multiple nested loops at once
+//the continue directive can be also used with a label.
+//it this case code exection jumps to the next interation of the labled loops
+
+outer: for (let v = 2; v < 5; v++) {
+    for (let g = 2; g < 5; g++) {
+        let input = prompt(`values,(${v},${g})`, " ");
+        if (!input) break outer;
+    }
+} alert("done!");//if value not enter or cancel in the prompt it break and show the alert
 
 
 
