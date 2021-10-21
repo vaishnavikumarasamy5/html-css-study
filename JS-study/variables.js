@@ -224,7 +224,8 @@ switch (true) {
         default:
             alert("what do you mean?");
 }
-
+//if there is no break the exection continues with the next next case without any checks
+//several variants of case which share the same code can be groups
 
 
 
