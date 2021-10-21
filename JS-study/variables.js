@@ -208,6 +208,24 @@ outer: for (let g = 2; g < 5; g++) {
 
 
 
+//"switch" statement
+//a switch statement can replace multiple if checks
+//the switch has one or more case blocks and an optional default
+let message = +prompt("Enters a marks");
+switch (true) {
+    case message > 90:
+        alert("keepit up");
+        break;
+    case message < 90:
+        alert("good");
+        break;
+    case message <= 50:
+        alert("poor");
+        default:
+            alert("what do you mean?");
+}
+
+
 
 
 
