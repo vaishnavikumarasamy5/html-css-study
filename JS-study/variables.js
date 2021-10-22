@@ -221,14 +221,49 @@ switch (true) {
         break;
     case message <= 50:
         alert("poor");
-        default:
-            alert("what do you mean?");
+    default:
+        alert("what do you mean?");
 }
 //if there is no break the exection continues with the next next case without any checks
 //several variants of case which share the same code can be groups
 
 
 
+//FUNCTION
+//function are the main building blocks of the program.
+//they allow the code to be called maney times without repetation
+//the function may access outer variables.but it works only from inside out.
+//the code g
+function showMessage() {
+    let username = "john";
+    alert("hello" + username);
+}
+showMessage();
 
+//PARAMETERS
+//we can pass arbitary data to function using parameter 
+//values passed to a function as parameters are coppied to its local variable
+function showMessage(firstname, lastname) {
+    alert("Hello" + ' ' + firstname + lastname);
+}
+showMessage("vaishnavi", "kumarasamy");
+showMessage();
+
+//RETURN
+//The directive return can be in any place of the function. 
+//When the execution reaches it, the function stops, and the value is returned to the calling code.
+function checkAge(age){
+    if(age>=18){
+    return(true);
+}else{
+    return confirm("do you have premmision from your parents?")
+}
+}
+let age=prompt("how old are you?,",18);
+if(checkAge(age)){
+    alert('access granted');
+}else{
+    alert('access denaid');
+}
 
 
