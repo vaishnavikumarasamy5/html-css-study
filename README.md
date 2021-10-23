@@ -16,3 +16,13 @@ git add index.html
 git commit -m "Changes in the color code"
 git push
 ```
+
+Run the js File
+
+```sh 
+$ cd JS-Study
+$ node <file-name.js>
+
+Example
+$ node sum-of-n-numbers.js
+```
