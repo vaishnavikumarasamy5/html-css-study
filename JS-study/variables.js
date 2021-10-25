@@ -252,18 +252,50 @@ showMessage();
 //RETURN
 //The directive return can be in any place of the function. 
 //When the execution reaches it, the function stops, and the value is returned to the calling code.
-function checkAge(age){
-    if(age>=18){
-    return(true);
-}else{
-    return confirm("do you have premmision from your parents?")
+function checkAge(age) {
+    if (age >= 18) {
+        return (true);
+    } else {
+        return confirm("do you have premmision from your parents?")
+    }
 }
-}
-let age=prompt("how old are you?,",18);
-if(checkAge(age)){
+let age = prompt("how old are you?,", 18);
+if (checkAge(age)) {
     alert('access granted');
-}else{
+} else {
     alert('access denaid');
 }
 
+//FUNCTION EXPRESSION
+//if the function is created as a part of expression it is called a "function expression"
+//function expression are created when the execution flow reaches them
+//syntax
 
+let sayHI = function () {
+    //body
+};
+
+//CALL BACK FUNCTION
+//using function expression
+function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no()
+}
+ask(
+    "do you agree with it?",
+    function () { alert("you agreed"); },
+    function () { alert("you cancelled the execution"); }
+);//the arguments showOK and showCancel of ask are called callbacks function are just callbacks
+
+
+//ARROW FUNCTION
+//without curly braces:(args...)=>exression; the function evalates it and returns the result.
+//with curly braces (args...)=>{body}
+//brackets allow us to write multiple statements inside the function but we need an explicit return to return something
+
+
+let age = prompt("what is your age?");
+
+let welcome = (age < 18) ? () => alert('hello') : () => alert("greetings");
+
+welcome();
