@@ -40,3 +40,6 @@ let division = (a, b) => {
   return a / b;
 };
 console.log("division of two number is,", division(56, 9));
+
+
+
